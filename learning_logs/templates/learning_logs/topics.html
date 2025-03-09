@@ -1,4 +1,4 @@
-{%extends "learning_logs/base.html"%}
+{%extends "learning_logs/base.html" %}
 
 {% block content %}
     Tópicos:
@@ -9,4 +9,7 @@
             </li>
         {% endfor %}
     </ul>
+
+    <a href="{% url 'new_topic'%}">Criar novo Tópico</a>
+
 {% endblock content %}
